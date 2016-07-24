@@ -1,0 +1,27 @@
+Requirements: Verify that user is able to navigate to Katasn Sharee page 
+
+Test Steps:
+Open Browser 
+Go go Eshopper24 site 
+Verify page Title
+OR
+Verify Page URL
+OR
+Verify Logo
+
+From the hero image click "View Collections" button 
+Verify that you have navigated to Sharee page
+Verify page Title
+Verify Page URL
+Verify "SAREES" word in top of the page 
+
+Click on Katan Sharee Text link 
+Verify page Title
+Verify Page URL
+Verify "KATAN SAREE" word in top of the page
+
+
+
+
+
+
