@@ -10,6 +10,11 @@ public class Shared {
 	Shared(WebDriver dr){
 		this.dr= dr;
 	}
+	public void verifyTitle(String t)
+	{
+		boolean title=dr.getTitle().contains(t);
+		System.out.println(title);
+	}
 	public void type(WebElement ele, String text)
 	{
 		ele.sendKeys(text);
