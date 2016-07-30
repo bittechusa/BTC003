@@ -13,6 +13,13 @@ public class Shared {
 	Shared(WebDriver dr){
 		this.dr= dr;
 	}
+<<<<<<< HEAD
+	public void verifyTitle(String t)
+	{
+		boolean title=dr.getTitle().contains(t);
+		System.out.println(title);
+	}
+=======
 	
 	public List<WebElement> getElements(String x)
 	{
@@ -20,6 +27,7 @@ public class Shared {
 	}
 	
 	
+>>>>>>> 91157dac85a7b029e3479c2da723796d660f4854
 	public void type(WebElement ele, String text)
 	{
 		ele.sendKeys(text);
