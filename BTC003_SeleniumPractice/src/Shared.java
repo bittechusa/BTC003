@@ -1,3 +1,6 @@
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,9 +13,17 @@ public class Shared {
 	Shared(WebDriver dr){
 		this.dr= dr;
 	}
+	
+	public List<WebElement> getElements(String x)
+	{
+		return dr.findElements(By.xpath(x));
+	}
+	
+	
 	public void type(WebElement ele, String text)
 	{
 		ele.sendKeys(text);
+		//getElements("dfh").get(40).click();
 	}
 	public WebElement waitForElement(WebElement ele){
 		WebDriverWait w = new WebDriverWait(dr, 20);
@@ -28,9 +39,13 @@ public class Shared {
 		else
 			return false;
 	}
-	
+	public WebElement getElement(String y)
+	{
+		return dr.findElement(By.xpath(y))
+	}
 	public void clickElemnt(WebElement ele){
 		ele.click();
+		//getElement("email").getText();
 	}
 	
 	public boolean verifyPageTitle(String expectedPageTitle){
