@@ -10,7 +10,10 @@ public class Shared {
 	Shared(WebDriver dr){
 		this.dr= dr;
 	}
-	
+	public void type(WebElement ele, String text)
+	{
+		ele.sendKeys(text);
+	}
 	public WebElement waitForElement(WebElement ele){
 		WebDriverWait w = new WebDriverWait(dr, 20);
 		w.until(ExpectedConditions.visibilityOf(ele));
