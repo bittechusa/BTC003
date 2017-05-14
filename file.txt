@@ -1,4 +1,8 @@
 everybody write your name please
 
 1.mushfique
+<<<<<<< HEAD
 3. Tariq
+=======
+2. Farjana
+>>>>>>> 6019bb49a33b8599e25965eb2a8e599d7771d1da
